@@ -1,4 +1,4 @@
-# orthensi-A
+# 0rthANSI-a
 An opinionated AZERTY focused ottholinear keyboard, compatible with ANSI layout 
 
 1. Stay close to traditional ANSI layout
