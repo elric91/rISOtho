@@ -1,0 +1,5 @@
+1. CircuitPython (7 to be able to deactivate mass storage)
+2. KMK (https://github.com/KMKfw/kmk_firmware)
+3. Adafruit OLED libraries :
+  - adafruit_displayio_ssd1306
+  - adafruit_display_text
