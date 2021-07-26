@@ -15,7 +15,17 @@ An opinionated AZERTY focused ottholinear keyboard, compatible with ISO layout
 
 ## Layout
  
-![Layout](https://github.com/elric91/0rthANSI-a/blob/main/images/layout.png)
+![Layout](https://github.com/elric91/rISOtho/blob/main/images/layout.png)
 <br>(yes, that 3U spacebbar may be difficult to procure ...)
           
-          
+## PCB
+```diff
+-! NOT TESTED YET !-
+```
+![PCB](https://github.com/elric91/rISOtho/blob/main/images/pcb.png)
+
+## Plate
+```diff
+-! NOT TESTED YET !-
+```
+![Plate](https://github.com/elric91/rISOtho/blob/main/images/plate.png)
