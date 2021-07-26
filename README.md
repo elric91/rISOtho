@@ -1,4 +1,4 @@
-# 0rthANSI-a
+# rISOtho
 An opinionated AZERTY focused ottholinear keyboard, compatible with ISO layout 
 
 ## Layout constraints
