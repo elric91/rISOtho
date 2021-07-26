@@ -25,6 +25,7 @@ keyboard.debug_enabled = False
 # Filler keys
 _______ = KC.TRANS
 xxxxxxx = KC.NO
+tbdtbd = KC.NO
 
 # Custom keys
 
@@ -46,7 +47,7 @@ keyboard.keymap = [
     KC.ESC , KC.1   , KC.2   , KC.3   , KC.4   , KC.5   , KC.6   , KC.7   , KC.8   , KC.9   , KC.0   , KC.MINS, KC.EQL , KC.BSPC,
     KC.TAB , KC.Q   , KC.W   , KC.E   , KC.R   , KC.T   , KC.Y   , KC.U   , KC.I   , KC.O   , KC.P   , KC.LBRC, KC.RBRC, KC.DEL ,
     xxxxxxx, KC.A   , KC.S   , KC.D   , KC.F   , KC.G   , KC.H   , KC.J   , KC.K   , KC.L   , KC.SCLN, KC.QUOT, KC.BSLS, xxxxxxx,
-    KC.LSFT, KC.tbd , KC.Z   , KC.X   , KC.C   , KC.V   , KC.B   , KC.N   , KC.M   , KC.COMM, KC.DOT , KC.SLSH, KC.UP  , KC.ENT ,
+    KC.LSFT, tbdtbd , KC.Z   , KC.X   , KC.C   , KC.V   , KC.B   , KC.N   , KC.M   , KC.COMM, KC.DOT , KC.SLSH, KC.UP  , KC.ENT ,
     KC.LCTL, KC.LGUI, xxxxxxx, KC.LALT, MT_EXT , xxxxxxx, KC.SPC , xxxxxxx, KC.RALT, KC.tbd , KC.RSFT, KC.LEFT, KC.DOWN, KC.RGHT,
     ],
     # Extra Keys Layer
