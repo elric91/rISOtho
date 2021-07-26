@@ -16,6 +16,6 @@ An opinionated AZERTY focused ottholinear keyboard, compatible with ISO layout
 ## Layout
  
 ![Layout](https://github.com/elric91/0rthANSI-a/blob/main/images/layout.png)
-(yes, that 3U spacebbar may be difficult to procure ...)
+<br>(yes, that 3U spacebbar may be difficult to procure ...)
           
           
