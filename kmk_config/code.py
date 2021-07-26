@@ -76,8 +76,8 @@ keyboard.keymap = [
     ],
 ]
 
-# Rotary Encoder (1 encoder / 1 definition per layer
-encoder_map = [
+"""
+# Rotary Encoder (1 encoder / 1 definition per layerencoder_map = [
   # Standard
   [(KC.tbd, KC.tbd, 1),],
   # Extra
@@ -89,7 +89,7 @@ encoder_map = [
 ] 
 encoder = Encoder([board.GP22, board.GP15, button_pin = 14)
 encoder.encoders[0].is_inverted = True
-
+"""
 
 if __name__ == '__main__':
     keyboard.go()
