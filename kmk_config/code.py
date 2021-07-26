@@ -6,15 +6,15 @@ from kmk.keys import KC
 from kmk.matrix import DiodeOrientation
 from kmk.modules.layers import Layers
 from kmk.modules.modtap import ModTap
-from kmk.modules.encoder import EncoderHandler
+#from kmk.modules.encoder import EncoderHandler
 
 keyboard = KMKKeyboard()
 layers = Layers()
 modtap = ModTap()
-keyboard.modules = [layers, modtap, encoder]
+keyboard.modules = [layers, modtap]
 
-keyboard.col_pins = (board.GP0, board.GP1, board.GP2, board.GP3, board.GP4, board.GP5, board.GP6, board.GP7, /
-                     board.GP8, board.GP0, board.GP10, board.GP11, board.GP12, board.GP13)
+keyboard.col_pins = (board.GP0, board.GP1, board.GP2, board.GP3, board.GP4, board.GP5, board.GP6, board.GP7, 
+                     board.GP8, board.GP9, board.GP10, board.GP11, board.GP12, board.GP13)
 keyboard.row_pins = (board.GP28, board.GP27, board.GP22, board.GP26, board.GP21)
 keyboard.diode_orientation = DiodeOrientation.COLUMNS
 
@@ -23,7 +23,7 @@ keyboard.debug_enabled = False
 
 
 # Filler keys
-_______ = KC.TRANS
+_______ = KC.TRNS
 xxxxxxx = KC.NO
 tbdtbd = KC.NO
 
@@ -31,7 +31,7 @@ tbdtbd = KC.NO
 
 
 # Layers
-LYR_STD, LYT_EXT, LYR_NUM, LYR_GAME = 0,1,2,3
+LYR_STD, LYR_EXT, LYR_NUM, LYR_GAME = 0,1,2,3
 
 TO_STD = KC.DF(LYR_STD)
 MT_EXT = KC.MT(LYR_EXT)
@@ -39,15 +39,15 @@ TO_NUM = KC.DF(LYR_NUM)
 TO_GAME = KC.DF(LYR_GAME)
 
 
-# Keycaps
+# Keymap
 
 keyboard.keymap = [
     # Standard Layer
     [
-    KC.ESC , KC.1   , KC.2   , KC.3   , KC.4   , KC.5   , KC.6   , KC.7   , KC.8   , KC.9   , KC.0   , KC.MINS, KC.EQL , KC.BSPC,
+    KC.ESC , KC.N1  , KC.N2  , KC.N3  , KC.N4  , KC.N5  , KC.N6  , KC.N7  , KC.N8  , KC.N9  , KC.N0  , KC.MINS, KC.EQL , KC.BSPC,
     KC.TAB , KC.Q   , KC.W   , KC.E   , KC.R   , KC.T   , KC.Y   , KC.U   , KC.I   , KC.O   , KC.P   , KC.LBRC, KC.RBRC, KC.DEL ,
-    xxxxxxx, KC.A   , KC.S   , KC.D   , KC.F   , KC.G   , KC.H   , KC.J   , KC.K   , KC.L   , KC.SCLN, KC.QUOT, KC.BSLS, xxxxxxx,
-    KC.LSFT, tbdtbd , KC.Z   , KC.X   , KC.C   , KC.V   , KC.B   , KC.N   , KC.M   , KC.COMM, KC.DOT , KC.SLSH, KC.UP  , KC.ENT ,
+    xxxxxxx, KC.A   , KC.S   , KC.D   , KC.F   , KC.G   , KC.H   , KC.J   , KC.K   , KC.L   , KC.SCLN, KC.QUOT, KC.NUHS, xxxxxxx,
+    KC.LSFT, KC.NUBS, KC.Z   , KC.X   , KC.C   , KC.V   , KC.B   , KC.N   , KC.M   , KC.COMM, KC.DOT , KC.SLSH, KC.UP  , KC.ENT ,
     KC.LCTL, KC.LGUI, xxxxxxx, KC.LALT, MT_EXT , xxxxxxx, KC.SPC , xxxxxxx, KC.RALT, tbdtbd , KC.RSFT, KC.LEFT, KC.DOWN, KC.RGHT,
     ],
     # Extra Keys Layer
@@ -60,8 +60,8 @@ keyboard.keymap = [
     ],
     # NumPad Layer
     [
-    TO_STD , xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KP.P7  , KC.P8  , KC.P9  , KC.PSLS, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
-    xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KP.P4  , KC.P5  , KC.P6  , KC.PAST, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
+    TO_STD , xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KC.P7  , KC.P8  , KC.P9  , KC.PSLS, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
+    xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KC.P4  , KC.P5  , KC.P6  , KC.PAST, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
     xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KC.N5  , KC.P1  , KC.P2  , KC.P3  , KC.PPLS, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
     xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KC.MINS, KC.P0  , KC.PDOT, _______, KC.PMNS, xxxxxxx, xxxxxxx, xxxxxxx, KC.PENT, 
     xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
