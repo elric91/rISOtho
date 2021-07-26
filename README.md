@@ -1,7 +1,7 @@
 # 0rthANSI-a
 An opinionated AZERTY focused ottholinear keyboard, compatible with ISO layout 
 
-## Options
+## Layout constraints
 1. Stay close to traditional ISO layout
 2. Keep 5 rows to keep standard access to accentuated letters (numbers row)
 3. No F1 to F12, only through layers
