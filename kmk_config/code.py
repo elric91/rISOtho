@@ -42,7 +42,7 @@ TO_GAME = KC.DF(LYR_GAME)
 # Keymap
 
 keyboard.keymap = [
-    # Standard Layer
+    # Standard (ISO) Layer
     [
     KC.ESC , KC.N1  , KC.N2  , KC.N3  , KC.N4  , KC.N5  , KC.N6  , KC.N7  , KC.N8  , KC.N9  , KC.N0  , KC.MINS, KC.EQL , KC.BSPC,
     KC.TAB , KC.Q   , KC.W   , KC.E   , KC.R   , KC.T   , KC.Y   , KC.U   , KC.I   , KC.O   , KC.P   , KC.LBRC, KC.RBRC, KC.DEL ,
@@ -62,8 +62,8 @@ keyboard.keymap = [
     [
     TO_STD , xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KC.P7  , KC.P8  , KC.P9  , KC.PSLS, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
     xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KC.P4  , KC.P5  , KC.P6  , KC.PAST, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
-    xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KC.N5  , KC.P1  , KC.P2  , KC.P3  , KC.PPLS, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
-    xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KC.MINS, KC.P0  , KC.PDOT, _______, KC.PMNS, xxxxxxx, xxxxxxx, xxxxxxx, KC.PENT, 
+    xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KC.LPRN, KC.P1  , KC.P2  , KC.P3  , KC.PPLS, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
+    xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, KC.RPRN, KC.P0  , KC.PDOT, _______, KC.PMNS, xxxxxxx, xxxxxxx, xxxxxxx, KC.PENT, 
     xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, xxxxxxx, 
     ],
     # Gaming Layer
